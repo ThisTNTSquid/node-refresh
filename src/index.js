@@ -5,7 +5,7 @@ const config=require('../config')
 
 var suc = 0;
 var fai = 0;
-setInterval(main, 1);
+setInterval(main, 1000/config.speed);
 
 function main() {
   axios
