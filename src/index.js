@@ -26,13 +26,11 @@ function main() {
           " >> Error: " +
           error.code
       );
-      process.exit(0)
+      // process.exit(0)
       // fs.writeFile(path.join(__dirname,"error.json"),JSON.stringify({...error}),function(err){
       //   if (err){
       //     console.log(err)
       //   }
       // })
-      
-      // process.exit(1)
     });
 }
