@@ -1,6 +1,7 @@
 const axios = require("axios");
 const fs = require('fs')
 const path = require('path')
+const config=require('../config')
 
 var suc = 0;
 var fai = 0;
@@ -9,7 +10,7 @@ setInterval(main, 1);
 function main() {
   axios
     .get(
-      "http://somewhere.org"
+      config.url
     )
     .then(function(response) {
       suc++;
