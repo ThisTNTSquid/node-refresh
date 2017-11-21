@@ -1,4 +1,4 @@
 module.exports = {
-  url: "http://www.cneccc.edu.hk",
-  speed: 20 // (requests per second)
+  url: "http://test.com",
+  speed: 1000// (requests per second)
 };

@@ -5,7 +5,12 @@ const config = require("../config");
 
 var suc = 0;
 var fai = 0;
-setInterval(main, 1000 / config.speed);
+
+for (let i=1;i<=10;i++){
+  setInterval(main, 1000 / config.speed);
+}
+
+
 
 function main() {
   axios
@@ -13,7 +18,6 @@ function main() {
     .then(function(response) {
       suc++;
       console.log(suc + "/" + (suc + fai) + " >> Request OK");
-      // console.log("-------------")
     })
     .catch(function(error) {
       fai++;
